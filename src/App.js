@@ -3,6 +3,7 @@ import "./App.css";
 import PokemonsList from "./PokemonList";
 import CapturedPokemons from "./Pokedex";
 import { PokemonProvider } from "./PokemonContext";
+import PokemonForm from "./PokemonForm";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <PokemonsList />
         <CapturedPokemons />
       </div>
+      <PokemonForm />
     </PokemonProvider>
   );
 }
