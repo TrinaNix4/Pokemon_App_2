@@ -1,15 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
 
-import Pokemonslist from "./Pokemonlist";
-import Pokemoncaptured from "./Pokemoncaptured";
+import PokemonsList from "./PokemonList";
+import CapturedPokemons from "./Pokedex";
+import { PokemonProvider } from "./PokemonContext";
 
 function App() {
   return (
-    <div className="App">
-      <Pokemonslist />
-      <Pokemoncaptured />
-    </div>
+    <PokemonProvider>
+      <div className="App">
+        <PokemonsList />
+        <CapturedPokemons />
+      </div>
+    </PokemonProvider>
   );
 }
 
